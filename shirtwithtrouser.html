@@ -21,6 +21,10 @@
           padding: 20px;
         }
 
+        .arial-textarea {
+        font-family: Arial, sans-serif;
+        }
+
 
 
   
@@ -122,6 +126,15 @@
                     <h3 for="productName" id="productName" name="productName" >Product Name: Shirt with Trouser</h3>
 
                     <label for="productID" id="productID" name="productID" >Product ID: BKAK457223</label>
+                    <label for="productID" id="productID" name="productID">
+                      - Salam, <br/>
+                      - Asan Khareed Online Shopping; <br/>
+                      - Warm Fleece Sweatshirt and Trouser 2 pieces <br/>
+                      - Color Black <br/>
+                      - Shirt size 69, 46 cm <br/>
+                      - Trouser size 95 cm <br/>
+                      - Free Delivery
+                    </label>
                   </div>
                   <img
                     class="product-photo"
@@ -142,7 +155,7 @@
           
         <h2>Enter Your Information</h2>
         <form
-          action="https://script.google.com/macros/s/AKfycbwI7L_hBRTh6E75mWLRUNzVvNCg2ecfZiK4Zs0VIjnBh6bqTbwFYS62QMalNBqEArWLqA/exec"
+          action="https://script.google.com/macros/s/AKfycbywtRXLDS0NhRQoDFnu4OVVfbcEzm5egJS3tqQetDXLHP_cSS2AqPgDGxjDezvjW2R6eA/exec"
           method="post"
           onsubmit="return placeOrder()"
         >
@@ -152,6 +165,9 @@
 
           <label for="productID">Product ID:</label>
           <input type="text" id="productID" name="productID" value="BKAK457223" readonly />
+
+          <label for="productDetails">Product details:</label>
+          <textarea id="productDetails" name="productDetails" required class="arial-textarea">- Only above size, color and etc availible.</textarea>
 
 
           <label for="name">First Name:</label>

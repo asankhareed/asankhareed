@@ -21,6 +21,10 @@
           padding: 20px;
         }
 
+        .arial-textarea {
+        font-family: Arial, sans-serif;
+        }
+
 
 
   
@@ -122,6 +126,18 @@
                     <h3 for="productName" id="productName" name="productName" >Product Name: Touch Screen Pen</h3>
 
                     <label for="productID" id="productID" name="productID" >Product ID: BKAK456323</label>
+                    <label for="productID" id="productID" name="productID">
+                      - Touch Screen Stylus Pen <br/>
+                      - Salam, <br/>
+                      - Asan Khareed Online Shopping; <br/>
+                      - 3 Usages: <br/>
+                      1- Touch screen pen for mobile or iPad <br/>
+                      2- Mobile Stand <br/>
+                      3- Also You can write with <br/>
+                      - Color Black, Purple, Orange, Blue and Red <br/>
+                      - Rs 199 only <br/>
+                      - Free Delivery
+                    </label>
                   </div>
                   <img
                     class="product-photo"
@@ -142,7 +158,7 @@
           
         <h2>Enter Your Information</h2>
         <form
-          action="https://script.google.com/macros/s/AKfycbwI7L_hBRTh6E75mWLRUNzVvNCg2ecfZiK4Zs0VIjnBh6bqTbwFYS62QMalNBqEArWLqA/exec"
+          action="https://script.google.com/macros/s/AKfycbywtRXLDS0NhRQoDFnu4OVVfbcEzm5egJS3tqQetDXLHP_cSS2AqPgDGxjDezvjW2R6eA/exec"
           method="post"
           onsubmit="return placeOrder()"
         >
@@ -152,6 +168,9 @@
 
           <label for="productID">Product ID:</label>
           <input type="text" id="productID" name="productID" value="BKAK456323" readonly />
+          
+          <label for="productDetails">Product details:</label>
+          <textarea id="productDetails" name="productDetails" required class="arial-textarea">Color: </textarea>
 
 
           <label for="name">First Name:</label>

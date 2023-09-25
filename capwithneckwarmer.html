@@ -21,6 +21,10 @@
           padding: 20px;
         }
 
+        .arial-textarea {
+        font-family: Arial, sans-serif;
+        }
+
 
 
   
@@ -122,6 +126,16 @@
                     <h3 for="productName" id="productName" name="productName" >Product Name: Cap with Neck warmer</h3>
 
                     <label for="productID" id="productID" name="productID" >Product ID: BKAK416320</label>
+                    <label for="productID" id="productID" name="productID">
+                      - Cap with neck warmer for men and women <br/>
+                      - Salam, <br/>
+                      - Asan Khareed Online Shopping; <br/>
+                      - It is used for winter mostly <br/>
+                      - Color: Black, Grey and Maroon availible <br/>
+                      - Rs550 only <br/>
+                      - Note: price will rise on winter <br/>
+                      - Free Delivery
+                    </label>
                   </div>
                   <img
                     class="product-photo"
@@ -142,7 +156,7 @@
           
         <h2>Enter Your Information</h2>
         <form
-          action="https://script.google.com/macros/s/AKfycbwI7L_hBRTh6E75mWLRUNzVvNCg2ecfZiK4Zs0VIjnBh6bqTbwFYS62QMalNBqEArWLqA/exec"
+          action="https://script.google.com/macros/s/AKfycbywtRXLDS0NhRQoDFnu4OVVfbcEzm5egJS3tqQetDXLHP_cSS2AqPgDGxjDezvjW2R6eA/exec"
           method="post"
           onsubmit="return placeOrder()"
         >
@@ -152,6 +166,9 @@
 
           <label for="productID">Product ID:</label>
           <input type="text" id="productID" name="productID" value="BKAK416320" readonly />
+          
+          <label for="productDetails">Product details:</label>
+          <textarea id="productDetails" name="productDetails" required class="arial-textarea">Color: </textarea>
 
 
           <label for="name">First Name:</label>
